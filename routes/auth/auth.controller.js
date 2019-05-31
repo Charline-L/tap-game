@@ -101,7 +101,7 @@ Methods
                         if( !validPassword ) reject('Password is not valid')
                         else {
                             // Set cookie
-                            res.cookie(process.env.COOKIE_NAME, user.generateJwt(), { httpOnly: true });
+                            res.cookie(process.env.COOKIE_NAME, user.generateJwt(user._id), { httpOnly: true });
                             
                             // Define user last connection
                             const lastConnection = user.lastConnection;
@@ -148,7 +148,7 @@ Methods
                             user.password = hashedPassword;
                             
                             // Set cookie
-                            res.cookie(process.env.COOKIE_NAME, user.generateJwt(), { httpOnly: true });
+                            res.cookie(process.env.COOKIE_NAME, user.generateJwt(user._id), { httpOnly: true });
 
                             // Save new password
                             user.save( (error, user) => {

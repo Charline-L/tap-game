@@ -26,7 +26,7 @@ Declare each property and type needed for the schema
 Method generateJwt()
 Generate a user access token
 */
-    identitySchema.methods.generateJwt = () => {
+    identitySchema.methods.generateJwt = idUser => {
         // The access token expired in 60 days
         const expiry = new Date();
         expiry.setDate(expiry.getDate() + 59);
@@ -38,7 +38,7 @@ Generate a user access token
          * @return => hashed user access token
         */
             return jwt.sign({
-                _id: this._id,
+                _id: idUser,
                 isValidated: this.password,
                 creationDate: this.creationDate,
                 lastConnection: this.lastConnection,
