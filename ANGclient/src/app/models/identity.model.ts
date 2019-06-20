@@ -3,6 +3,6 @@ export interface IdentityModel {
     email: String,
     password?: String,
     securePassword?: String,
-    creationDate?: String,
-    lastConnection?: String
+    lastName?: String,
+    firstName?: String
 }

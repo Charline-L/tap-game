@@ -18,18 +18,14 @@ Export
             loadChildren: './routes/home-page/module#Module'
         },
         {
-            path: 'identity-validation',
-            loadChildren: './routes/identity-validation/module#Module'
-        },
-        {
-            path: 'reset-password',
-            loadChildren: './routes/reset-password-page/module#Module',
-            canActivate: [ AuthGuard ] // Accessible for connected user
-        },
-        {
             path: 'me',
             loadChildren: './routes/user-page/module#Module',
             canActivate: [ AuthGuard ] // Accessible for connected user
+        },
+        {
+          path: 'tap',
+          loadChildren: './routes/scores-page/module#Module',
+          canActivate: [ AuthGuard ] // Accessible for connected user
         }
     ];
 //

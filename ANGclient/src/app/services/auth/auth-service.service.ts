@@ -20,57 +20,48 @@ Definition
     
     // Function to register a user
     public register(userData: IdentityModel): Promise<any>{
+
       // Set header
       let myHeader = new HttpHeaders();
-      myHeader.append('Content-Type', 'application/json');
 
       // POST '/auth/register'
       return this.HttpClient.post(`${environment.apiUrl}/auth/register`, userData, { headers: myHeader })
       .toPromise().then(this.getData).catch(this.handleError);
     };
 
-    // Function to register a user
-    public identityValidation( _id: String, password: String ): Promise<any>{
-      // Set header
-      let myHeader = new HttpHeaders();
-      myHeader.append('Content-Type', 'application/json');
-      const userData = {
-        _id: _id,
-        password: password
-      }
-
-      // POST '/auth/register'
-      return this.HttpClient.post(`${environment.apiUrl}/auth/identity-validation`, userData, { headers: myHeader })
-      .toPromise().then(this.getData).catch(this.handleError);
-    };
-
     // Function to connect a user
     public login(userData: IdentityModel): Promise<any>{
+
       // Set header
       let myHeader = new HttpHeaders();
       myHeader.append('Content-Type', 'application/json');
 
       // POST '/auth/login'
-      return this.HttpClient.post(`${environment.apiUrl}/auth/login`, userData, { headers: myHeader })
-      .toPromise().then(this.getData).catch(this.handleError);
-    };
-
-    // Function to reset password
-    public restPassword(password: String, newPassword: String): Promise<any>{
-      // Set header
-      let myHeader = new HttpHeaders();
-      myHeader.append('Content-Type', 'application/json');
-
-      // POST '/auth/login'
-      return this.HttpClient.post(`${environment.apiUrl}/auth/password`, { password, newPassword }, { headers: myHeader })
+      return this.HttpClient.post(`${environment.apiUrl}/auth/login`, userData, { headers: myHeader, withCredentials: true })
       .toPromise().then(this.getData).catch(this.handleError);
     };
 
     // Function to get user identity from server
     public getUserId(): Promise<any>{
-      // POST '/auth/login'
-      return this.HttpClient.get(`${environment.apiUrl}/auth`)
+
+      // Ajoute les header
+      let myHeader = new HttpHeaders();
+      myHeader.append('Content-Type', 'application/json');
+
+      // GET '/auth/login'
+      return this.HttpClient.get(`${environment.apiUrl}/auth`,{ headers: myHeader, withCredentials: true })
       .toPromise().then(this.getData).catch(this.handleError);
+    };
+
+    public logout(): Promise<any>{
+
+      // Ajoute les header
+      let myHeader = new HttpHeaders();
+      myHeader.append('Content-Type', 'application/json');
+
+      // GET '/auth/logout'
+      return this.HttpClient.get(`${environment.apiUrl}/auth/logout`,{ headers: myHeader, withCredentials: true })
+        .toPromise().then(this.getData).catch(this.handleError);
     };
 
     // Get the API response

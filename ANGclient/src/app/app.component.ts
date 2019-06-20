@@ -11,7 +11,7 @@ Definition
   @Component({
     selector: 'app-root',
     template: `
-      <header>
+      <header class="maxWidth">
         <app-header></app-header>
       </header>
       

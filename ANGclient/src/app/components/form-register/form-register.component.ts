@@ -2,7 +2,7 @@
 Imports & definition 
 */
   // Imports
-  import { Component, OnInit,Input, Output, EventEmitter, OnChanges } from '@angular/core';
+  import { Component, OnInit,Input, Output, EventEmitter } from '@angular/core';
   import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
   // Inner
@@ -17,13 +17,14 @@ Imports & definition
 
 
 /* Export */
-  export class FormRegisterComponent implements OnInit, OnChanges {
+  export class FormRegisterComponent implements OnInit {
 
     /* 
     Config.
     */
       // Input/Output
       @Input() resetFormData: Boolean
+      @Input() errorUserExist: String
       @Output() sendFormData = new EventEmitter();
 
       // Declaration
@@ -45,16 +46,21 @@ Imports & definition
       private resetForm = () => {
         // Set validator
         this.form = this.FormBuilder.group({
+          firstName: [undefined, Validators.required],
+          lastName: [undefined, Validators.required],
           email: [undefined, Validators.required],
           password: [undefined, Validators.required],
-          securePassword: [undefined, Validators.required]
+          securePassword: [undefined, Validators.required],
+          gdpr: [undefined, Validators.required]
         });
 
         // Set form data obbject
         this.formData = {
           email: undefined,
           password: undefined,
-          securePassword: undefined
+          securePassword: undefined,
+          firstName: undefined,
+          lastName: undefined
         };
       };
 
@@ -67,6 +73,8 @@ Imports & definition
           this.formData = {
             email: this.form.value.email,
             password: this.form.value.password,
+            firstName: this.form.value.firstName,
+            lastName: this.form.value.lastName,
           }
 
           // Use event emmiter
@@ -80,13 +88,6 @@ Imports & definition
     */
       ngOnInit() {
         this.resetForm();
-      };
-
-      ngOnChanges(changes){
-        // Reset form data when user is registed
-        if( !changes.resetFormData.firstChange && changes.resetFormData.currentValue ){
-          this.resetForm();
-        };
       };
     //
   };

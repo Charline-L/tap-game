@@ -10,7 +10,7 @@ Imports
     const Vocabulary = require('../../services/vocabulary.service');
     const { sendBodyError, sendFieldsError, sendApiSuccessResponse, sendApiErrorResponse } = require('../../services/response.service');
     const { checkFields } = require('../../services/request.service');
-    const { register, confirmIdentity, login, setPassword } = require('./auth.controller');
+    const { register, login } = require('./auth.controller');
 //
 
 /*
@@ -40,31 +40,11 @@ Routes definition
                 //=> Error: bad fields provided
                 if (!ok) { sendFieldsError(res, Vocabulary.errors.badFields, miss, extra) }
                 else{
+
                     //=> Request is valid: use controller
                     register(req.body)
                     .then( apiResponse => sendApiSuccessResponse(res, Vocabulary.request.success, apiResponse) )
                     .catch( apiResponse => sendApiErrorResponse(res, Vocabulary.request.error, apiResponse))
-                };
-            });
-
-            /**
-             * POST Route to validate identity
-             * @param body: Object => _id: String, password: String
-             * @callback => change identity.isValidated to 'true'
-            */
-            authRouter.post( '/identity-validation', (req, res) => {
-                // Check request body
-                if (typeof req.body === 'undefined' || req.body === null) { sendBodyError(res, Vocabulary.errors.noBody) };
-                // Check fields in the body
-                const { miss, extra, ok } = checkFields( Mandatory.idValidation, req.body );
-                
-                //=> Error: bad fields provided
-                if (!ok) { sendFieldsError(res, Vocabulary.errors.badFields, miss, extra) }
-                else{
-                    //=> Request is valid: use controller
-                    confirmIdentity(req.body)
-                    .then( apiResponse => sendApiSuccessResponse(res, Vocabulary.request.success, apiResponse) )
-                    .catch( apiResponse => sendApiErrorResponse(res, Vocabulary.request.error, apiResponse) );
                 };
             });
 
@@ -74,14 +54,17 @@ Routes definition
              * @callback => send user _id and date informations
             */
             authRouter.post( '/login', (req, res) => {
+
                 // Check request body
                 if (typeof req.body === 'undefined' || req.body === null) { sendBodyError(res, Vocabulary.errors.noBody) };
+
                 // Check fields in the body
                 const { miss, extra, ok } = checkFields( Mandatory.login, req.body );
 
                 //=> Error: bad fields provided
                 if (!ok) { sendFieldsError(res, Vocabulary.errors.badFields, miss, extra) }
                 else{
+
                     //=> Request is valid: use controller
                     login(req.body, res)
                     .then( apiResponse => sendApiSuccessResponse(res, Vocabulary.request.success, apiResponse) )
@@ -93,33 +76,26 @@ Routes definition
              * GET Route to check identity token (for Angular AuthGuard)
              * @param passport: AuthStrategy => use the access token to check user identity
              * @callback => send user _id and date informations
-            */
+             */
             authRouter.get( '/', this.passport.authenticate('jwt', { session: false }), (req, res) => {
+
                 // Check if identity is validated for security strategy
                 if(req.user.isValidated) return sendApiSuccessResponse(res, Vocabulary.request.success, { _id: req.user._id, lastConnection: req.user.lastConnection })
                 else return sendApiErrorResponse(res, Vocabulary.request.error, 'Identity not validated');
             });
 
             /**
-             * GET Route to check identity token (for Angular AuthGuard)
+             * GET Route pour déconnecter l'utilisateur
              * @param passport: AuthStrategy => use the access token to check user identity
-             * @param body: Object => password: String, newPassword: String
-             * @callback => send user _id and date informations
-            */
-            authRouter.post( '/password', this.passport.authenticate('jwt', { session: false }), (req, res) => {
-                // Check request body
-                if (typeof req.body === 'undefined' || req.body === null) { sendBodyError(res, Vocabulary.errors.noBody) };
-                // Check fields in the body
-                const { miss, extra, ok } = checkFields( Mandatory.changePassword, req.body );
+             * @callback => send success
+             */
+            authRouter.get( '/logout', this.passport.authenticate('jwt', { session: false }), (req, res) => {
 
-                //=> Error: bad fields provided
-                if (!ok) { sendFieldsError(res, Vocabulary.errors.badFields, miss, extra) }
-                else{
-                    //=> Request is valid: use controller
-                    setPassword(req.body, req.user, res)
-                    .then( apiResponse => sendApiSuccessResponse(res, Vocabulary.request.success, apiResponse) )
-                    .catch( apiResponse => sendApiErrorResponse(res, Vocabulary.request.error, apiResponse) );
-                };
+                // efface le cookie
+                res.cookie(process.env.COOKIE_NAME, null, {httpOnly: true});
+
+                // Renvoit réponse vide
+                return sendApiSuccessResponse(res, Vocabulary.request.success, {})
             });
         };
 

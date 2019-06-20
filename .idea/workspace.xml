@@ -2,9 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab32c95-c579-40cd-8fc4-2f305fdfc895" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANGclient/src/app/models/link.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANGclient/src/app/models/score.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/router.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/scores-page.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/scores-page.component.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/scores-page.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/scores-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/user-page/user-page.component.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANGclient/src/app/services/game/game-service.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/game.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/game/game.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/game/game.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/app.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/app.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/components/form-login/form-login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/components/form-login/form-login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/components/form-login/form-login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/components/form-login/form-login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/components/form-register/form-register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/components/form-register/form-register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/components/form-register/form-register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/components/form-register/form-register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/components/form-response/form-response.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/components/form-response/form-response.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/components/form-response/form-response.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/components/form-response/module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/models/api.reponse.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/models/api.reponse.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/models/identity.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/models/identity.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/home-page/module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/home-page/module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/identity-validation/identity-validation.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/identity-validation/identity-validation.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/identity-validation/module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/identity-validation/router.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/reset-password-page/module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/reset-password-page/reset-password-page.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/reset-password-page/reset-password-page.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/reset-password-page/reset-password-page.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/reset-password-page/router.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/user-page/user-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/user-page/user-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/routes/user-page/user-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/routes/user-page/user-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/app/services/auth/auth-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/app/services/auth/auth-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANGclient/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ANGclient/src/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/identity.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/identity.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/identity.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/auth/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth/auth.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth/auth.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/front/front.routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/main.controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/main.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/main.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/route.boilerplate/controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/route.boilerplate/router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/mandatory.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/mandatory.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/request.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/request.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/default~routes-home-page-module~routes-identity-validation-module~routes-reset-password-page-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/default~routes-home-page-module~routes-identity-validation-module~routes-reset-password-page-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/main.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/routes-home-page-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/routes-home-page-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/routes-identity-validation-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/routes-identity-validation-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/routes-reset-password-page-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/routes-reset-password-page-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/routes-user-page-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/routes-user-page-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/runtime.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/styles.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/vendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/vendor.js.map" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,79 +105,245 @@
     <session id="1283882716">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="2" />
-          <entry key="md" value="2" />
+          <entry key="css" value="4" />
+          <entry key="env" value="12" />
+          <entry key="html" value="35" />
+          <entry key="js" value="79" />
+          <entry key="json" value="4" />
+          <entry key="md" value="11" />
+          <entry key="sass" value="7" />
+          <entry key="ts" value="127" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key=".env file" value="12" />
+          <entry key="CSS" value="4" />
+          <entry key="HTML" value="35" />
+          <entry key="JSON" value="4" />
+          <entry key="JavaScript" value="79" />
+          <entry key="Markdown" value="8" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Sass" value="7" />
+          <entry key="TypeScript" value="127" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="156" />
+          <entry key="css" value="475" />
+          <entry key="env" value="218" />
+          <entry key="html" value="1948" />
+          <entry key="js" value="3040" />
+          <entry key="json" value="58" />
+          <entry key="md" value="2485" />
+          <entry key="sass" value="1017" />
+          <entry key="ts" value="6339" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="156" />
+          <entry key=".env file" value="218" />
+          <entry key="CSS" value="475" />
+          <entry key="HTML" value="1948" />
+          <entry key="JSON" value="58" />
+          <entry key="JavaScript" value="3040" />
+          <entry key="Markdown" value="1766" />
+          <entry key="PLAIN_TEXT" value="719" />
+          <entry key="Sass" value="1017" />
+          <entry key="TypeScript" value="6339" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="Angular2LanguageService" value="7" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/identity.model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/auth/auth.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="155" column="37" lean-forward="true" selection-start-line="155" selection-start-column="37" selection-end-line="155" selection-end-column="37" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ANGclient/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.2892498">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1725">
+                  <caret line="78" selection-start-line="78" selection-end-line="78" />
+                  <folding>
+                    <element signature="e#147#199#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="185">
+                  <caret line="81" selection-start-line="81" selection-end-line="81" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#44#94#0" expanded="true" />
+                    <element signature="e#153#213#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ANGclient/src/app/services/auth/auth-service.service.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="291">
+                  <caret line="42" selection-start-line="42" selection-end-line="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.env">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="239">
+                  <caret line="15" selection-start-line="15" selection-end-line="20" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="254">
+                    <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="133">
+                  <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="598">
+                  <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ANGclient/src/app/app.router.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="207">
+                  <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/routes/auth/auth.controller.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="737">
+                  <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/models/user.model.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="368">
+                  <caret line="18" column="17" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>console.lo</find>
+      <find>scores-page</find>
+      <find>Unauthorized</find>
+      <find>http</find>
+      <find>process.env.CLIENT</find>
+      <find>fromAuthHeaderAsBearerToken</find>
+      <find>passport.use</find>
+      <find>cookieExtractor</find>
+      <find>setAuthentication</find>
+      <find>trace</find>
+      <find>`</find>
+      <find>canActivate</find>
+      <find>192</find>
+      <find>consol</find>
+      <find>192.</find>
+      <find>console.erro</find>
+      <find>GameService</find>
+      <find>form</find>
+      <find>c-form__buttondisabe</find>
+      <find>hover</find>
+      <find>c-form</find>
+      <find>radio</find>
+      <find>m</find>
+      <find>this.Rout</find>
+      <find>getUserId</find>
+      <find>login</find>
+      <find>email-validator</find>
+      <find>validat</find>
+      <find>register</find>
+      <find>email-valid</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/ANGclient/src/app/components/form-register</dir>
+      <dir>$PROJECT_DIR$/ANGclient/src/app/components/form-login</dir>
+      <dir>$PROJECT_DIR$/ANGclient</dir>
+      <dir>$PROJECT_DIR$/ANGclient/src/app</dir>
+      <dir>$PROJECT_DIR$/ANGclient/src</dir>
+      <dir>$PROJECT_DIR$/routes</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,9 +351,53 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/models/identity.model.js" />
+        <option value="$PROJECT_DIR$/services/request.service.js" />
+        <option value="$PROJECT_DIR$/routes/main.router.js" />
+        <option value="$PROJECT_DIR$/services/mandatory.service.js" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/routes/home-page/module.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/components/form-login/form-login.component.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/models/identity.model.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/components/form-register/form-register.component.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/router.ts" />
+        <option value="$PROJECT_DIR$/routes/game/game.routes.js" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/module.ts" />
+        <option value="$PROJECT_DIR$/models/user.model.js" />
+        <option value="$PROJECT_DIR$/ANGclient/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/auth.guard.ts" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/services/auth.service.js" />
+        <option value="$PROJECT_DIR$/models/game.model.js" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/models/score.model.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/services/game/game-service.service.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/app.router.ts" />
+        <option value="$PROJECT_DIR$/models/link.model.js" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/models/link.model.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.html" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.sass" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/components/form-login/form-login.component.html" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.sass" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/components/form-register/form-register.component.html" />
+        <option value="$PROJECT_DIR$/ANGclient/src/styles.css" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/scores-page.component.sass" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/scores-page.component.html" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/routes/user-page/user-page.component.html" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/routes/user-page/user-page.component.sass" />
+        <option value="$PROJECT_DIR$/routes/game/game.controller.js" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/routes/user-page/user-page.component.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/scores-page.component.ts" />
+        <option value="$PROJECT_DIR$/routes/auth/auth.routes.js" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.html" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/services/auth/auth-service.service.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/models/api.reponse.model.ts" />
         <option value="$PROJECT_DIR$/routes/auth/auth.controller.js" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.ts" />
+        <option value="$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.ts" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -120,6 +416,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/ANGclient/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
@@ -128,7 +425,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="985" />
@@ -208,6 +505,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,6 +517,62 @@
               <item name="tap-game" type="b2602c69:ProjectViewProjectNode" />
               <item name="tap-game" type="462c0819:PsiDirectoryNode" />
               <item name="ANGclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tap-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tap-game" type="462c0819:PsiDirectoryNode" />
+              <item name="ANGclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tap-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tap-game" type="462c0819:PsiDirectoryNode" />
+              <item name="ANGclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tap-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tap-game" type="462c0819:PsiDirectoryNode" />
+              <item name="ANGclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tap-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tap-game" type="462c0819:PsiDirectoryNode" />
+              <item name="ANGclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tap-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tap-game" type="462c0819:PsiDirectoryNode" />
+              <item name="ANGclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tap-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tap-game" type="462c0819:PsiDirectoryNode" />
+              <item name="ANGclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="home-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tap-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tap-game" type="462c0819:PsiDirectoryNode" />
+              <item name="ANGclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="scores-page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tap-game" type="b2602c69:ProjectViewProjectNode" />
@@ -236,19 +590,35 @@
               <item name="routes" type="462c0819:PsiDirectoryNode" />
               <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tap-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tap-game" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/charline/Documents/ECVDigital/M2/1-Cours/MEAN/2019.05.30/tap-game/ANGclient/node_modules/typescript/lib/lib.es5.d.ts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/ANGclient/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ANGclient/src/app/models" />
+      <recent name="$PROJECT_DIR$/ANGclient/src/app/routes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ANGclient/src/app/routes/scores-page" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -272,36 +642,73 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559313195191</updated>
-      <workItem from="1559313198003" duration="521000" />
+      <workItem from="1559313198003" duration="13631000" />
+      <workItem from="1560106749274" duration="24286000" />
+      <workItem from="1560599110127" duration="7000" />
+      <workItem from="1560969414595" duration="9932000" />
+      <workItem from="1561018540921" duration="358000" />
+      <workItem from="1561030942415" duration="94000" />
+      <workItem from="1561060567260" duration="3997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="521000" />
+    <option name="totallyTimeSpent" value="52305000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="985" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="985" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22061484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3295325" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295325" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3295325" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3295325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="npm" order="0" side_tool="true" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.24954791" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="1" weight="0.3295325" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3295325" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.3295325" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -310,37 +717,387 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ANGclient/README.md">
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
+        <state relative-caret-position="467">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/home-page/router.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/router.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="-213">
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/identity.model.js">
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/home-page/module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        <state relative-caret-position="403">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-231" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/components/form-login/form-login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-535">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/passport-jwt/lib/strategy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/main.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/cookie-parser/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/auth.guard.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/auth.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/node_modules/typescript/lib/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="680" column="8" selection-start-line="680" selection-start-column="8" selection-end-line="680" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/mandatory.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/models/identity.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/services/game/game-service.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#16#59#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/game/game.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/models/score.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/models/link.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/components/form-login/form-login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/components/form-register/form-register.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/scores-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/scores-page.component.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/user-page/user-page.component.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/scores-page/scores-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1357">
+          <caret line="59" column="146" selection-start-line="59" selection-start-column="146" selection-end-line="59" selection-end-column="146" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#107#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="139" selection-start-line="139" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/game.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/response.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/components/form-register/form-register.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/game/game.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/models/api.reponse.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/app.router.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/user-page/user-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#44#94#0" expanded="true" />
+            <element signature="e#153#224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/user-page/user-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/auth/auth.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/routes/home-page/home-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#44#94#0" expanded="true" />
+            <element signature="e#153#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/services/auth/auth-service.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ANGclient/src/app/components/header/header.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#147#199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/auth/auth.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="155" column="37" lean-forward="true" selection-start-line="155" selection-start-column="37" selection-end-line="155" selection-end-column="37" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="737">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="15" selection-start-line="15" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="254">
+            <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

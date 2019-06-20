@@ -2,7 +2,7 @@
 Imports
 */
     const JwtStrategy = require('passport-jwt').Strategy;
-    const IdentityModel = require('../models/identity.model');
+    const IdentityModel = require('../models/user.model');
 //
 
 /*
@@ -10,6 +10,7 @@ Service definition
 */  
     // Extract token from cookie
     const cookieExtractor = (req) => {
+
         let token = null;
         if (req && req.cookies) token = req.cookies[process.env.COOKIE_NAME];
         return token;
@@ -17,6 +18,7 @@ Service definition
 
     // JWT authentication
     const authJwt = (passport) => {
+
         // #JWT Options for passport
         const opts = {
             jwtFromRequest: cookieExtractor,

@@ -1,31 +1,47 @@
-<section class="flexBox spaceBetween">
-    <article>
-            <h2>Connexion</h2>
-            <app-form-login 
-            (sendFormData)="connectUser($event)" 
-            [resetFormData]="resetFormDataLogin"
-            ></app-form-login>
-            
-            <app-form-response
-                *ngIf="displayReturnLogin"
-                [content]="apiMessageLogin"
-                [class]="messageClassLogin"
-                (close)="displayReturnLogin = false"
-            ></app-form-response>
-    </article>
-    
-    <article>
-        <h2>Inscription</h2>
-        <app-form-register 
-        (sendFormData)="registerUser($event)" 
+<section class="p-homepage">
+
+  <article
+    class="p-homepage__article"
+  >
+    <h2
+      (click)="toggleLogin()"
+      class="p-homepage__title"
+    >Login</h2>
+
+    <div
+      *ngIf="isLoginActive"
+      class="p-homepage__container-form"
+    >
+
+      <app-form-login
+        (sendFormData)="connectUser($event)"
+        [errorEmailMessage]="errorEmailMessage"
+        [errorPasswordMessage]="errorPasswordMessage"
+      ></app-form-login>
+
+    </div>
+
+  </article>
+
+  <article
+    class="p-homepage__article"
+  >
+    <h2
+      class="p-homepage__title"
+      (click)="toggleRegister()"
+    >Register</h2>
+
+    <div
+      *ngIf="isRegisterActive"
+      class="p-homepage__container-form"
+    >
+      <app-form-register
+        (sendFormData)="registerUser($event)"
         [resetFormData]="resetFormDataRegister"
-        ></app-form-register>
-    
-        <app-form-response
-            *ngIf="displayReturnRegister"
-            [content]="apiMessageRegister"
-            [class]="messageClassRegister"
-            (close)="displayReturnRegister = false"
-        ></app-form-response>
-    </article>
+        [errorUserExist]="errorUserExist"
+      ></app-form-register>
+
+    </div>
+
+  </article>
 </section>

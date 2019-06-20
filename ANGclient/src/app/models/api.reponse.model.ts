@@ -1,5 +1,5 @@
 export interface ApiResponseModel {
     data: any,
-    err: any,
+    error: any,
     message: String
 }

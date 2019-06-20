@@ -1,12 +1,37 @@
-<form autocomplete="off" novalidate [formGroup]="form" (submit)="submitForm()">
-  <label for="email-register">Email</label>
-  <input type="email" name="email-register" id="email-register" required minlength="5" formControlName = "email">
+<form class="c-form" autocomplete="off" novalidate [formGroup]="form" (submit)="submitForm()">
 
-  <label for="password-register">Mot de passe</label>
-  <input type="password" name="password-register" id="password-register" required minlength="5" formControlName = "password">
+  <fieldset class="c-form__fieldset">
 
-  <label for="securePassword">Répéter le mot de passe <span *ngIf="passwordError">Incorrect</span></label>
-  <input type="password" name="securePassword" id="securePassword" required minlength="5" formControlName = "securePassword">
+    <legend class="c-form__legend">About you</legend>
 
-  <button type="submit" [disabled]='!form.valid'>Inscription</button>
+    <label class="c-form__label" for="firstName">Firstname</label>
+    <input class="c-form__input" type="text" name="firstName" id="firstName" required formControlName="firstName">
+
+    <label class="c-form__label" for="lastName">Lastname</label>
+    <input class="c-form__input" type="text" name="lastName" id="lastName" required formControlName="lastName">
+
+  </fieldset>
+
+  <fieldset class="c-form__fieldset">
+
+    <legend class="c-form__legend">Login informations</legend>
+
+    <label class="c-form__label" for="email-register">{{ errorUserExist || 'Email' }}</label>
+    <input class="c-form__input" type="email" name="email" id="email-register" required minlength="5" formControlName="email">
+
+    <label class="c-form__label" for="password-register">Password</label>
+    <input class="c-form__input" type="password" name="password" id="password-register" required formControlName="password">
+
+    <label class="c-form__label" for="securePassword">Confirm Password<span *ngIf="passwordError">Incorrect</span></label>
+    <input class="c-form__input" type="password" name="securePassword" id="securePassword" required formControlName="securePassword">
+
+  </fieldset>
+
+  <div class="c-form__checkboxe-container">
+    <input class="c-form__checkboxe" type="checkbox" name="gdpr" id="gdpr" formControlName="gdpr">
+    <label class="c-form__label c-form__label--checkboxe" for="gdpr">I accept the terms and conditions</label>
+  </div>
+
+  <button class="c-form__button" type="submit" [disabled]='!form.valid'>Sign in</button>
+
 </form>

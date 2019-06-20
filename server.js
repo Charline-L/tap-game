@@ -9,6 +9,7 @@ Imports
     const path = require('path');
     const ejs = require('ejs');
     const morgan = require('morgan');
+    const cors = require('cors');
 
     // Inner
     const mongoDB = require('./services/db.service');
@@ -22,6 +23,15 @@ Server configuration
     // Define server
     const port = process.env.PORT;
     const server = express();
+    server.use(cors(
+        {
+            origin: [
+                process.env.CLIENT,
+            ],
+            optionsSuccessStatus: 200,
+            credentials: true
+        }
+    ))
 
     // Define server class
     class ServerClass {
@@ -39,7 +49,8 @@ Server configuration
             server.use(bodyParser.urlencoded({ extended: true }));
 
             //=> Use CookieParser to setup serverside cookies
-            server.use(cookieParser(process.env.COOKIE_SECRET));
+            // server.use(cookieParser(process.env.COOKIE_SECRET));
+            server.use(cookieParser());
 
             //=> Set server main router
             server.use('/', mainRouter);

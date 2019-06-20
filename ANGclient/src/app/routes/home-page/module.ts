@@ -10,7 +10,6 @@ Imports
     import { HomePageComponent } from './home-page.component';
     import { FormRegisterModule } from "../../components/form-register/module";
     import { FormLoginModule } from "../../components/form-login/module";
-    import { FormResponseModule } from "../../components/form-response/module";
 //
 
 
@@ -23,8 +22,7 @@ Definition
             CommonModule, 
             Routing,
             FormRegisterModule,
-            FormLoginModule,
-            FormResponseModule
+            FormLoginModule
         ]
     })
 //

@@ -1,3 +1,13 @@
-<p>
-  user-page works!
-</p>
+<section class="p-me">
+
+  <p class="p-me__error" *ngIf="hasError">Une erreur a eu lieu pendant l'enregistrement merci de recommencer</p>
+
+  <div class="{{isMousedown ? 'p-me__clic p-me__clic--taping' : 'p-me__clic'}}"
+       (click)="clickImage()"
+  ></div>
+
+  <div class="p-me__progress c-progress__container">
+    <div class="{{ hasStarted ? 'c-progress__current c-progress__current--animated' : 'c-progress__current'}}" ></div>
+  </div>
+
+</section>

@@ -2,7 +2,7 @@
 Imports & definition 
 */
   // Imports
-  import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angular/core';
+  import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
   // Inner
@@ -17,19 +17,19 @@ Imports & definition
 
 
 /* Export */
-  export class FormLoginComponent implements OnInit, OnChanges {
+  export class FormLoginComponent implements OnInit {
 
     /* 
     Config.
     */
       // Input/Output
-      @Input() resetFormData: Boolean
+      @Input() errorEmailMessage: String
+      @Input() errorPasswordMessage: String
       @Output() sendFormData = new EventEmitter();
 
       // Declaration
       public form: FormGroup;
       public formData: IdentityModel;
-      public passwordError: Boolean = false;
 
       // Instanciation
       constructor(
@@ -74,13 +74,6 @@ Imports & definition
     */
       ngOnInit() {
         this.resetForm();
-      };
-
-      ngOnChanges(changes){
-        // Reset form data when user is logged
-        if( !changes.resetFormData.firstChange && changes.resetFormData.currentValue ){
-          this.resetForm();
-        };
       };
     //
   };

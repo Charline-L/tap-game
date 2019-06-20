@@ -1,0 +1,14 @@
+<section class="p-scores">
+
+  <p *ngIf="hasError" class="p-scores__error">An error has occured please come back later</p>
+
+  <ul *ngFor="let score of scores;" class="p-scores__list">
+
+    <li class="p-scores__item">
+      <p class="p-scores__points">{{score.points}}pts</p>
+      <p class="p-scores__text">{{ score.user.firstName + ' ' + score.user.lastName + ' ' + score.dateString}}</p>
+    </li>
+
+  </ul>
+
+</section>

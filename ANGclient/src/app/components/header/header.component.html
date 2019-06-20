@@ -1,10 +1,23 @@
-<section class="maxWidth">
-  <h1>MEAN stack boilerplate</h1>
-  <p>Boilerplate code to start a MEAN stack project</p>
-  <nav>
-    <ul>
-      <li><a [routerLink]="'/'">Homepage</a></li>
-      <li><a [routerLink]="'/me'">Me</a></li>
+<div class="c-header">
+
+  <h1 class="c-header__title">{{titlePage}}</h1>
+
+  <p class="c-header__baseline">{{baseline}}</p>
+
+  <nav *ngIf="this.hasNav" class="c-header__nav">
+
+    <ul class="c-header__container-link">
+
+      <li>
+        <a class="c-header__link" [routerLink]="firstLink.route">{{firstLink.name}}</a>
+      </li>
+
+      <li>
+        <a class="c-header__link" (click)="logout()">Logout</a>
+      </li>
+
     </ul>
+
   </nav>
-</section>
+
+</div>

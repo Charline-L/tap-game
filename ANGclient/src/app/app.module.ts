@@ -8,7 +8,7 @@ Imports
   import { HttpClientModule } from '@angular/common/http';
   
   // Inner components
-  import {  AuthService} from "./services/auth/auth-service.service";
+  import { AuthService } from "./services/auth/auth-service.service";
   import { AppComponent } from './app.component';
   import { MainRouter } from './app.router';
 

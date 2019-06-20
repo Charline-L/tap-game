@@ -1,9 +1,8 @@
 /*
 Import
 */
-    const IdentityModel = require('../../models/identity.model')
+    const UserModel = require('../../models/user.model')
     const bcrypt = require('bcryptjs');
-    const { sendEmail } = require('../../services/mailer.service');
 //
 
 /*
@@ -15,35 +14,30 @@ Methods
     */
     const register = body => {
         return new Promise( (resolve, reject) => {
+
             // Search user by email
-            IdentityModel.findOne( { email: body.email }, (error, user) => {
+            UserModel.findOne( { email: body.email }, (error, user) => {
                 if(error) return reject(error) // Mongo Error
                 else if(user) return reject('Identity already exist')
                 else{
+
                     // Encrypt user password
                     bcrypt.hash( body.password, 10 )
                     .then( hashedPassword => {
-                        // Replace pasword
-                        const clearPassword = body.password;
+
+                        // Replace password
                         body.password = hashedPassword;
 
                         // Set creation and connection date
                         body.creationDate = new Date();
                         body.lastConnection = null;
-                        body.isValidated = false;
+
+                        // ajoute la validation de l'utilisateur
+                        body.isValidated = true
 
                         // Register new user
-                        IdentityModel.create(body)
-                        .then( mongoResponse => {
-                            sendEmail(mongoResponse, clearPassword)
-                            .then( mailerResponse => {
-                                resolve({ _id: mongoResponse._id, creationDate: mongoResponse.creationDate })
-                            })
-                            .catch( mailerResponse => {
-                                reject(mailerResponse)
-                            })
-                            
-                        })
+                        UserModel.create(body)
+                        .then( mongoResponse => resolve({ _id: mongoResponse._id, creationDate: mongoResponse.creationDate }))
                         .catch( mongoResponse => reject(mongoResponse) )
                     })
                     .catch( hashError => reject(hashError) );
@@ -54,111 +48,41 @@ Methods
     };
 
     /**
-     * Confirm user identity before login
-     * @param body: Object => _id: String, password: String
-    */
-    const confirmIdentity = body => {
-        return new Promise( (resolve, reject) => {
-            // Search user by email
-            IdentityModel.findById( body._id, (error, user) => {
-                if(error) return reject(error)
-                else if(!user) return reject('Unknow identity')
-                else{
-                    // Check password
-                    const validPassword = bcrypt.compareSync(body.password, user.password);
-                    if( !validPassword ) return reject('Password not valid')
-                    else {
-                        // Change identity state
-                        user.isValidated = true;
-
-                        // Save identuty state
-                        user.save()
-                        .then( mongoResponse => resolve(mongoResponse) )
-                        .catch( mongoResponse => reject(mongoResponse) )
-                    };
-                }
-            } )
-        })
-    };
-
-    /**
      * Login user
      * @param body: Object => email: String, password: String
     */
     const login = (body, res) => {
+
         return new Promise( (resolve, reject) => {
+
             // Search user by email
-            IdentityModel.findOne( { email: body.email }, (error, user) => {
+            UserModel.findOne( { email: body.email }, (error, user) => {
                 if(error) reject(error)
                 else if(!user) reject('Unknow identity')
                 else{
-                    if( !user.isValidated ){
-                        return reject('Account is not validated')
-                    }
-                    else{
-                        // Check password
-                        const validPassword = bcrypt.compareSync(body.password, user.password);
-                        if( !validPassword ) reject('Password is not valid')
-                        else {
-                            // Set cookie
-                            res.cookie(process.env.COOKIE_NAME, user.generateJwt(user._id), { httpOnly: true });
-                            
-                            // Define user last connection
-                            const lastConnection = user.lastConnection;
 
-                            // Set user new connection
-                            user.lastConnection = new Date();
-
-                            // Save new connection
-                            user.save( (error, user) => {
-                                if(error) return reject(error)
-                                else{
-                                    return resolve({ _id: user._id, creationDate: user.creationDate, lastConnection: lastConnection });
-                                };
-                            });
-                        };
-                    };
-                };
-            });
-        });
-    };
-
-    /**
-     * Set user password
-     * @param body: Object => password: String, newPassword: String
-    */
-    const setPassword = (body, authUser, res) => {
-        return new Promise( (resolve, reject) => {
-            // Search user by email
-            IdentityModel.findById( authUser._id, (error, user) => {
-                
-                if(error) reject(error)
-                else if(!user) reject('Unknow identity')
-                else{
-                    
                     // Check password
                     const validPassword = bcrypt.compareSync(body.password, user.password);
-                    if( !validPassword ) return reject('Password not valid')
+                    if( !validPassword ) reject('Password is not valid')
                     else {
-                        
-                        // Encrypt user password
-                        bcrypt.hash( body.newPassword, 10 )
-                        .then( hashedPassword => {
-                            // Set new password
-                            user.password = hashedPassword;
-                            
-                            // Set cookie
-                            res.cookie(process.env.COOKIE_NAME, user.generateJwt(user._id), { httpOnly: true });
 
-                            // Save new password
-                            user.save( (error, user) => {
-                                if(error) return reject(error)
-                                else{
-                                    return resolve({ _id: user._id, creationDate: user.creationDate, lastConnection: user.lastConnection });
-                                };
-                            });
-                        })
-                        .catch( hashError => reject(hashError) );
+                        // Set cookie
+                        res.cookie(process.env.COOKIE_NAME, user.generateJwt(user._id), {httpOnly: true});
+
+                        // Define user last connection
+                        const lastConnection = user.lastConnection;
+
+                        // Set user new connection
+                        user.lastConnection = new Date();
+
+                        // Save new connection
+                        user.save( (error, user) => {
+
+                            if(error) return reject(error)
+                            else{
+                                return resolve({ _id: user._id, firstName: user.firstName, creationDate: user.creationDate, lastConnection: lastConnection });
+                            };
+                        });
                     };
                 };
             });
@@ -170,8 +94,6 @@ Export
 */
     module.exports = {
         register,
-        confirmIdentity,
-        login,
-        setPassword
+        login
     }
 //

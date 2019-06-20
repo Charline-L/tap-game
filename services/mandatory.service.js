@@ -2,10 +2,11 @@
 Definition
 */
     const Mandatories = {
-        register: ['email', 'password'],
+        register: ['email', 'password', 'lastName', 'firstName'],
         idValidation: ['_id', 'password'],
         login: ['email', 'password'],
         changePassword: ['password', 'newPassword'],
+        score: ['points']
     };
 //
 

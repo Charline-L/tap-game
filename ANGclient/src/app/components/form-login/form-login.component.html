@@ -1,9 +1,13 @@
-<form autocomplete="off" novalidate [formGroup]="form" (submit)="submitForm()">
-  <label for="email-login">Email</label>
-  <input type="email" name="email-login" id="email-login" required minlength="5" formControlName = "email">
+<form
+  class="c-form"
+  autocomplete="off" novalidate [formGroup]="form" (submit)="submitForm()">
 
-  <label for="password-login">Mot de passe</label>
-  <input type="password" name="password-login" id="password-login" required minlength="5" formControlName = "password">
+  <label class="c-form__label" for="email-login">{{ errorEmailMessage || 'Email'}}</label>
+  <input class="c-form__input" type="email" name="email-login" id="email-login" required minlength="5" formControlName="email">
 
-  <button type="submit" [disabled]='!form.valid'>Connexion</button>
+  <label class="c-form__label" for="password-login">{{ errorPasswordMessage || 'Password'}}</label>
+  <input class="c-form__input" type="password" name="password-login" id="password-login" required formControlName="password">
+
+  <button class="c-form__button" type="submit" [disabled]='!form.valid'>Login</button>
+
 </form>

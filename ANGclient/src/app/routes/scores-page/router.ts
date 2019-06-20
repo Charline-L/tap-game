@@ -3,7 +3,7 @@ Imports
 */
     import { ModuleWithProviders } from '@angular/core';
     import { Routes, RouterModule } from '@angular/router';
-    import { IdentityValidationComponent } from './identity-validation.component';
+    import { ScoresPageComponent } from './scores-page.component';
 //
 
 
@@ -12,8 +12,8 @@ Definition
 */
     const route: Routes = [
         {
-            path: ':id',
-            component: IdentityValidationComponent
+            path: '',
+            component: ScoresPageComponent
         }
     ];
 //
